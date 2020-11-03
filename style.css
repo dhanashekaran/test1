@@ -162,19 +162,24 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.wire-hoist .aalto-heading{
+    width: 100px;
+}
 .aalto-heading{
     background-color: #BAE8E8;
     margin: 0 auto;
     width: 100px;
-    height: 30px;
+    height: 24px;
     position: relative;
     margin-bottom: 30px;
 }
 .aalto-heading h3{
     position: absolute;
-    left: -28px;
+    left: -15px;
+    bottom: 4px;
     font-size: 25px;
     font-weight: 400;
+    font-family: 'Kaushan Script', cursive;
 }
 .aalto-img {
    display: flex;
@@ -240,9 +245,7 @@ body{
     margin-bottom: 20px;
     text-align: center;
 }
-.wire-hoist .aalto-heading{
-    width: 145px;
-}
+
 /* our clients */
 .client-heading{
     background-color: #BAE8E8;
@@ -455,6 +458,9 @@ body{
     flex-basis: auto;
     padding: 4px 10px;
   }  
+.all-products >  p{
+    margin: 40px auto;
+}
 .all-products-grid{
     display: flex;
     justify-content: flex-start;
@@ -471,10 +477,11 @@ body{
 }
 .aalto-heading{
     width: 120px;
-    height: 37px;
+    height: 23px;
 }
 .aalto-heading h3{
     font-size: 30px;
+    bottom: 1px;
 }
 .aalto-demo img{
     max-width: 400px;
@@ -536,6 +543,9 @@ body{
 .f-nav a{
     flex-basis: auto;
     margin: 0;
+}
+.footer-container p{
+    padding: 20px 0;
 }
 }
 
