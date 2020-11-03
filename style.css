@@ -20,6 +20,22 @@ body{
     max-width: 1400px;
     margin: 0 auto;
 }
+
+.call{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #bae8e885;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.call img{
+    width: 30px;
+    height: auto;
+}
 /*========header section=========*/
 
 .header{
@@ -189,13 +205,14 @@ body{
 .aalto-img img{
     width: 90%;
     height: auto;
-    margin-bottom: 10px;
-    border-radius: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 7px 0px #636363;
 }
 
 .aalto > p{
     width: 90%;
-    margin: 25px auto;
+    margin: 15px auto 25px auto;
     text-align: center;
 }
 .aalto-demo{
@@ -404,7 +421,66 @@ body{
     padding: 10px 0;
 }
 
+/* clients page */
 
+.all-clients{
+    max-width: 1000px;
+    margin: 50px auto;
+
+}
+.all-clients .underline{
+    margin: 20px auto;
+}
+.all-clients h2{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Kaushan Script', cursive;
+}
+.all-clients .grid1{
+    padding: 0 40px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.all-clients .grid1 h5{
+    background-color: rgb(243 243 243);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    box-shadow: 0px 1px 4px 0px #d8d8d8;
+}
+
+/* GAllery page */
+
+.product-gallery{
+    max-width: 1200px;
+    margin: 30px auto;
+}
+.product-gallery .g-product{
+    background-color: #E3F6F5;
+    padding: 20px 0;
+}
+.product-gallery .g-product h2{
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 25px;
+    font-family: 'Kaushan Script', cursive;
+}
+.product-gallery .g-product .grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-gallery .g-product .grid img{
+    max-width: 400px;
+    margin: 5px;
+    width: 80%;
+}
 /* Mobile */
 @media screen and (min-width: 400px){
 
@@ -419,7 +495,6 @@ body{
 
 .aalto-img img{
     width: 45%;
-    padding: 5px;
 }
 .nav ul a{
     flex-basis: 30%;
@@ -436,7 +511,7 @@ body{
     margin-bottom: 50px;
 }
 .underline{
-    margin: 40px auto;
+    margin: 50px auto;
 }
 .aalto .aalto-specs{
     margin-top: 50px;
@@ -474,6 +549,9 @@ body{
 }
 .all-products-underline{
     margin: 40px auto;
+}
+.wire-hoist .aalto-heading{
+    width: 130px;
 }
 .aalto-heading{
     width: 120px;
@@ -546,6 +624,26 @@ body{
 }
 .footer-container p{
     padding: 20px 0;
+}
+
+/* all clients page */
+.all-clients .underline{
+    margin: 40px auto;
+}
+.all-clients h2{
+    margin-bottom: 40px;
+}
+/* gallery page */
+.product-gallery .g-product .grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.product-gallery .g-product .grid img{
+    max-width: 300px;
+    margin: 10px;
 }
 }
 
