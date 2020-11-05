@@ -87,14 +87,14 @@ body{
     outline: 1px solid #000;
 }
 .header-title{
-    margin-top: 10%;
+    margin-top: 5%;
     opacity: 0.51;
-    font-weight: 400;
+    font-weight: 700;
     font-family: var(--main-heading-font);
     font-size: clamp(45px, 12vw, 100px);
 }
 .header-des{
-    margin: 20px auto 0px auto;
+    margin: 12px auto 0px auto;
     font-size: 17px;
     line-height: 27px;
     color: #fff;
