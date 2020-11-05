@@ -69,7 +69,7 @@
             <h5>Unitech Civil Services</h5>
             <h5>A.K.Housing Development Co Pvt Ltd</h5>
             <h5>Sattva Engineering Company Pvt Ltd</h5>
-            <h5Alpha Foundation Pvt Ltd</h5>
+            <h5>Alpha Foundation Pvt Ltd</h5>
             <h5>Wall Craft</h5>
             <h5> R.K.N.Constructions Pt Ltd</h5>
             <h5>Nivetha Enterprises</h5>
@@ -86,20 +86,25 @@
     
     <section class="main-address-container">
         <div class="address" id="address">
-            <form>
+            <form action="POST" data-netlify="true">
                 <strong>Business Enquiry</strong>
                 <br/>
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name"/>
+                <input type="text" name="name" id="name" required/>
+
                 <label for="number">Mobile No</label>
-                <input type="number" name="number" id="number"/>
+                <input type="number" name="phone-number" id="number" required/>
+
                 <label for="company">Company Name</label>
-                <input type="text" name="company" id="company"/>
-                <label for="mail">Mail Id</label>
-                <input type="email" name="mail" id="mail">
+                <input type="text" name="company-name" id="company" required/>
+
+                <label for="email">Mail Id</label>
+                <input type="email" name="email" id="email" required/>
+
                 <label for="msg">Message</label>
-                <textarea name="msg" id="msg" rows="3"></textarea>
-                <button>Submit</button>
+                <textarea name="message" id="msg" rows="3" required></textarea>
+
+                <button type="submit">Submit</button>
             </form>
     
             <div class="address-container">

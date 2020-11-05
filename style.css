@@ -1,3 +1,8 @@
+:root {
+    --heading-font: 'Merienda One', cursive;
+    --main-heading-font: 'Kaushan Script', cursive;
+  }
+
 *{
     margin: 0px;
     padding: 0px;
@@ -14,7 +19,7 @@ body{
     width: 90%;
     height: 1px;
     background-color: rgb(129, 129, 129);
-    margin: 20px auto;
+    margin: 30px auto;
 }
 .address,.footer-container{
     max-width: 1400px;
@@ -25,7 +30,7 @@ body{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #E3F6F5;
+    background-color: #000000ab;
     padding: 10px;
     position: fixed;
     right: 10px;
@@ -84,8 +89,8 @@ body{
 .header-title{
     margin-top: 10%;
     opacity: 0.51;
-    font-weight: 600;
-    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-family: var(--main-heading-font);
     font-size: clamp(45px, 12vw, 100px);
 }
 .header-des{
@@ -106,17 +111,17 @@ body{
 }
 .all-products-heading{
     background-color: #BAE8E8;
-    width: 240px;
+    width: 220px;
     height: 25px;
     position: relative;
     margin: 80px auto 0 auto;
 }
 .all-products-heading p{
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
     left: -13px;
     bottom: 7px;
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Merienda One', cursive;
 }
 .all-products > p{
     margin: 20px auto;
@@ -185,17 +190,17 @@ body{
     background-color: #BAE8E8;
     margin: 0 auto;
     width: 100px;
-    height: 24px;
+    height: 20px;
     position: relative;
     margin-bottom: 30px;
 }
 .aalto-heading h3{
     position: absolute;
-    left: -15px;
-    bottom: 4px;
-    font-size: 25px;
+    left: -10px;
+    bottom: 5px;
+    font-size: 20px;
     font-weight: 400;
-    font-family: 'Kaushan Script', cursive;
+    font-family: var(--heading-font);
 }
 .aalto-img {
    display: flex;
@@ -206,7 +211,6 @@ body{
     width: 90%;
     height: auto;
     margin-bottom: 20px;
-    border-radius: 8px;
     box-shadow: 1px 1px 7px 0px #636363;
 }
 
@@ -246,7 +250,7 @@ body{
     background-color: #BAE8E8;
 }
 .aalto-specs h2{
-    font-family: 'Kaushan Script', cursive;
+    font-family: var(--heading-font);
     position: absolute;
     top: -20px;
     left: 50%;
@@ -267,15 +271,15 @@ body{
 .client-heading{
     background-color: #BAE8E8;
     margin: 50px auto 10px auto;
-    width: 125px;
+    width: 135px;
     height: 22px;
     position: relative;
 }
 .client-heading h2{
     position: absolute;
     left: -10px;
-    bottom: 6px;
-    font-family: 'Kaushan Script', cursive;
+    bottom: 3px;
+    font-family: var(--heading-font);
     font-weight: 500;
     font-size: 25px;
 }
@@ -302,7 +306,7 @@ body{
     color: #909090;
     font-size: 13px;
     display: inline-block;
-    margin: 15px 0;
+    margin-top: 15px;
 }
 
 /* help */
@@ -311,6 +315,7 @@ body{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    padding: 15px 0;
 }
 .help div{
     display: inline-block;
@@ -350,6 +355,7 @@ body{
     border-bottom: 1px solid #fff;
     background-color: rgba(255, 255, 255, 0);
     margin-bottom: 15px;
+    color: #fff;
 }
 .address form input::placeholder{
     color: rgb(255, 255, 255);
@@ -436,7 +442,7 @@ body{
     font-weight: 400;
     text-align: center;
     margin-bottom: 25px;
-    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
 }
 .all-clients .grid1{
     padding: 0 40px ;
@@ -470,7 +476,7 @@ body{
     font-weight: 400;
     text-align: center;
     margin-bottom: 25px;
-    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
 }
 .product-gallery .g-product .grid{
     display: flex;
@@ -559,7 +565,7 @@ body{
     height: 23px;
 }
 .aalto-heading h3{
-    font-size: 30px;
+    font-size: 25px;
     bottom: 1px;
 }
 .aalto-demo img{
@@ -592,6 +598,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px auto;
+    padding: 30px 0;
 }
 .help div{
     flex-basis: 40%;
@@ -606,14 +613,15 @@ body{
 .address form{
     max-width: 400px;
 }
+
 .address-container{
     align-self: flex-start;
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    max-width: 800px;
 }
 .all-products-heading p{
-    font-size: 30px;
+    font-size: 25px;
     bottom: 4px;
 }
 .all-products-heading{

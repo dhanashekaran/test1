@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aalto Engineers</title>
+    <link rel="icon" sizes="40x32" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300;400;500;600;700&family=Work+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -31,7 +33,7 @@
                 <a href="product-gallery.html">Products Gallery</a>
                 <a href="our-clients.html">Our Clients</a>
                 <a href="#help">Contact Us</a> 
-                <a href="#address">Ask Question</a>
+                <a href="#address">Business Enquiry</a>
             </ul>
         </nav>
 
@@ -456,20 +458,25 @@
 
     <section class="main-address-container">
         <div class="address" id="address">
-            <form>
+            <form action="POST" data-netlify="true">
                 <strong>Business Enquiry</strong>
                 <br/>
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name"/>
+                <input type="text" name="name" id="name" required/>
+
                 <label for="number">Mobile No</label>
-                <input type="number" name="number" id="number"/>
+                <input type="number" name="phone-number" id="number" required/>
+
                 <label for="company">Company Name</label>
-                <input type="text" name="company" id="company"/>
-                <label for="mail">Mail Id</label>
-                <input type="email" name="mail" id="mail">
+                <input type="text" name="company-name" id="company" required/>
+
+                <label for="email">Mail Id</label>
+                <input type="email" name="email" id="email" required/>
+
                 <label for="msg">Message</label>
-                <textarea name="msg" id="msg" rows="3"></textarea>
-                <button>Submit</button>
+                <textarea name="message" id="msg" rows="3" required></textarea>
+
+                <button type="submit">Submit</button>
             </form>
     
             <div class="address-container">
